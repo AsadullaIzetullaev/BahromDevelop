@@ -51,6 +51,20 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('FileName.eot');
+  src: url('FileName.eot?#iefix') format('embedded-opentype'),
+    url('../fonts-owesome/fontawesome-webfont.woff') format('woff'),
+    url('FileName.ttf') format('truetype'),
+    url('FileName.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -185,9 +199,114 @@ img {
   top: 3px;
 }
 
-audio {
-  z-index: 50;
+
+
+
+
+
+.social a {
+  color: #fff;
+  text-decoration: none;
 }
+
+.me {
+  width: 400px;
+  margin: 90px auto;
+}
+
+.me p,
+.me h1 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.me p {
+  font-weight: 200;
+}
+
+.me span {
+  font-weight: bold;
+}
+
+.social {
+  position: fixed;
+  top: 30%;
+  left: 15px;
+}
+
+.social ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+  
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 330px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+  
+}
+
+.social ul li:hover {
+  transform: translate(110px, 0);
+
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.social ul li:hover a {
+  font-family: "Poppins";
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}
+
+.social ul li:hover i {
+  background: #fff;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+
+.social ul li:hover .fa-instagram {
+  color: #E1306C;
+}
+
+.social ul li:hover .fa-github {
+  color: #6e5494;
+}
+
+.social ul li:hover .fa-telegram {
+  color: #229ED9;
+}
+
+.social ul li:hover .fa-vk {
+  color: #0077ff;
+}
+
+.social ul li:hover .fa-linkedin {
+  color: #0077b5;
+}
+
+
+.social ul li i {
+  margin-left: 10px;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  transform: rotate(0deg);
+
+}
+
 
 .hello__block {
   display: flex;
@@ -480,7 +599,7 @@ img {
   letter-spacing: 0.99px;
 }
 
-.social {
+.footer_social {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -488,7 +607,7 @@ img {
   gap: 56px;
 }
 
-.social h5 {
+.footer_social h5 {
   color: #14279b;
   text-align: center;
   font-family: "Poppins";
@@ -499,7 +618,7 @@ img {
   letter-spacing: 1.925px;
 }
 
-.social span {
+.footer_social span {
   color: #172774;
   font-family: "Poppins";
   font-size: 35px;
